@@ -1,0 +1,99 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: aliceblue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+#header {
+  background-image: url('./images/Mask\ Group\ 1.png');
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+#top-bar img {
+  height: 2.75rem;
+}
+
+#top-bar {
+  display: flex;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+#top-bar button {
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: azure;
+  background-color: #410ff8;
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#top-bar button:hover {
+  background-color: blue;
+}
+
+#top-bar li {
+  cursor: pointer;
+}
+
+#top-bar li:hover {
+  color: darkblue;
+}
+
+#heading {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: center;
+  align-items: center;
+}
+#heading p {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.green {
+  color: #32bba4;
+  font-weight: 800;
+}
