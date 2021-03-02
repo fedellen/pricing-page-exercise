@@ -1,5 +1,20 @@
-body {
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+body {
+  /* box-sizing: border-box; */
   margin: 0;
   background-color: aliceblue;
 }
@@ -32,7 +47,17 @@ p {
   align-items: center; */
 }
 #top-bar img {
-  height: 2.75rem;
+  height: 2rem;
+}
+
+#top-bar a {
+  opacity: 60%;
+}
+
+@media (max-width: 800px) {
+  #top-bar a {
+    display: none;
+  }
 }
 
 #top-bar {
@@ -96,4 +121,101 @@ p {
 .green {
   color: #32bba4;
   font-weight: 800;
+}
+
+#pricing {
+  display: flex;
+  padding: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.plan {
+  padding: 2.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 1rem;
+  width: 19rem;
+}
+
+.plan h4 {
+  margin: 0;
+}
+
+.annual-price {
+  font-size: 0.75rem;
+  opacity: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.plan h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.plan.blue {
+  border-style: none;
+  background-color: #410ff8;
+  color: azure;
+}
+
+.plan.blue button {
+  background-color: azure;
+  color: #410ff8;
+}
+
+.plan.blue button:hover {
+  background-color: whitesmoke;
+}
+
+.plan button {
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: azure;
+  background-color: #410ff8;
+  padding: 1.35rem 1.25rem;
+  border-radius: 0.25rem;
+  border: 0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.plan button:hover {
+  background-color: blue;
+}
+
+.plan ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan li {
+  display: flex;
+  font-size: 0.85rem;
+  font-weight: 600;
+  gap: 1rem;
+  align-items: center;
+}
+
+.plan img {
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: #c2b2fd;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.plan.blue img {
+  background-color: azure;
 }
